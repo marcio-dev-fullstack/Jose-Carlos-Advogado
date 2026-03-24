@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Jose Carlos Alves da Costa | Advocacia de Excelência</title>
+    <title>Dr. José Carlos Alves da Costa | Advocacia de Excelência</title>
     
-    <meta name="description" content="Escritório de Advocacia Dr. Jose Carlos Alves da Costa. Especialista em Direito Civil, Empresarial e Digital.">
+    <meta name="description" content="Escritório de Advocacia Dr. José Carlos Alves da Costa. Especialista em Direito Civil, Empresarial e Digital.">
     
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
@@ -67,13 +67,17 @@
         nav ul li a:hover { color: var(--gold); }
 
         /* --- HERO SECTION --- */
-        .hero {
-            height: 100vh;
-            /* Se a imagem hero-bg.jpg estiver na mesma pasta do HTML, o caminho é esse: */
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('hero-bg.jpg');
-            background-size: cover; background-position: center;
-            display: flex; align-items: center; justify-content: center;
-            text-align: center; padding: 0 20px;
+       .hero {
+            min-height: 100vh;
+            background: #0a0a0a; /* Cor de fundo caso a imagem falhe */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('hero-bg.jpg');
+            background-size: cover; 
+            background-position: center;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-align: center; 
+            padding: 100px 20px;
         }
 
         .hero-content h1 { font-size: clamp(2.2rem, 6vw, 4rem); margin-bottom: 20px; }
@@ -129,12 +133,12 @@
 </head>
 <body>
 
-    <a href="https://wa.me/5594999999999" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/5594984339662" class="whatsapp-btn" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <nav id="navbar">
-        <a href="#" class="logo">J. CARLOS<span>.</span></a>
+        <a href="#" class="logo">J. CARLOS ADVOGACIA</a>
         <ul>
             <li><a href="#home">Início</a></li>
             <li><a href="#servicos">Áreas</a></li>
@@ -144,7 +148,7 @@
 
     <section class="hero" id="home">
         <div class="hero-content" data-aos="fade-up">
-            <h1 style="color: var(--white);">Dr. Jose Carlos <br> Alves da Costa</h1>
+            <h1 style="color: var(--white);">Dr. José Carlos <br> Alves da Costa</h1>
             <p>Advocacia estratégica, ética e focada em resultados de alta complexidade.</p>
             <a href="#contato" class="btn-gold">Agendar Consultoria</a>
         </div>
@@ -180,21 +184,25 @@
     <footer id="contato">
         <div class="footer-grid">
             <div class="footer-box">
-                <h4>JCA Advocacia</h4>
+                <h4>J. Carlos Advocacia</h4>
                 <p>Compromisso com a excelência técnica e atendimento personalizado.</p>
             </div>
             <div class="footer-box">
                 <h4>Contato</h4>
-                <p><i class="fas fa-phone"></i> (94) 99999-9999</p>
+                <p><i class="fas fa-phone"></i> (94) 98433-9662</p>
                 <p><i class="fas fa-envelope"></i> contato@josecarlos.adv.br</p>
             </div>
             <div class="footer-box">
                 <h4>Localização</h4>
-                <p>Conceição do Araguaia - PA</p>
+                <p>Floresta do Araguaia - PA</p>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2026 Dr. Jose Carlos Alves da Costa. Todos os direitos reservados.
+            &copy; 2026 Dr. Jose Carlos Alves da Costa. Todos os direitos reservados.<br>
+            Desenvolvido por: 
+            <a href="https://www.razgo.com.br" target="_blank" style="color: var(--gold); text-decoration: none; font-weight: 600;">
+                RAZGO
+            </a>
         </div>
     </footer>
 
