@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jose Carlos Alves da Costa | Advocacia de Excelência</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="https://wa.me/5500000000000" class="whatsapp-btn" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav id="navbar">
+        <a href="#" class="logo">J. CARLOS<span>.</span></a>
+        
+        <ul id="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#servicos">Áreas de Atuação</a></li>
+            <li><a href="#sobre">O Escritório</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <div class="menu-btn" id="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <span class="subtitle">Justiça, Estratégia e Integridade</span>
+            <h1>Dr. Jose Carlos <br> Alves da Costa</h1>
+            <p>Advocacia especializada com foco em soluções jurídicas modernas e resultados sólidos para clientes exigentes.</p>
+            <div class="hero-btns">
+                <a href="#contato" class="btn-gold">Agendar Consultoria</a>
+                <a href="#servicos" class="btn-outline">Ver Áreas</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Áreas de Atuação</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Direito Civil</h3>
+                    <p>Assessoria em contratos, responsabilidade civil e direitos de propriedade com visão estratégica.</p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Empresarial</h3>
+                    <p>Compliance, estruturação societária e proteção jurídica para o crescimento do seu negócio.</p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-users-items"></i>
+                    <h3>Família e Sucessões</h3>
+                    <p>Planejamento sucessório, inventários e divórcios conduzidos com o máximo de discrição.</p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Direito Digital</h3>
+                    <p>Especialista em LGPD, crimes cibernéticos e segurança jurídica no ambiente tecnológico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contato Direto</h2>
+                <div class="underline"></div>
+            </div>
+
+            <form id="contact-form" class="glass-form" data-aos="zoom-in">
+                <div class="input-row">
+                    <input type="text" id="name" placeholder="Nome Completo" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                </div>
+                <textarea id="message" rows="5" placeholder="Descreva brevemente sua necessidade..." required></textarea>
+                <button type="submit" class="btn-gold full-width">Enviar Solicitação</button>
+                <div id="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <h4>JCA Advocacia</h4>
+                <p>OAB/XX 00.000</p>
+                <p>Excelência jurídica em cada detalhe.</p>
+            </div>
+            <div class="footer-box">
+                <h4>Endereço</h4>
+                <p>Av. Principal, Edifício Premium, Sala 101</p>
+                <p>Centro - Conceição do Araguaia, PA</p>
+            </div>
+            <div class="footer-box">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Dr. Jose Carlos Alves da Costa. Desenvolvido com Excelência.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({ duration: 1000, once: true });
+
+        // Navbar Sticky & Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('sticky', window.scrollY > 50);
+        });
+
+        // Menu Mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('open');
+            navLinks.classList.toggle('active');
+        });
+
+        // Form Submit Simulado
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            status.innerHTML = "Enviando...";
+            setTimeout(() => {
+                status.innerHTML = "Mensagem enviada! Entraremos em contato em breve.";
+                status.style.color = "#25d366";
+                form.reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
