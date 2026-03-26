@@ -203,10 +203,14 @@ footer { padding: 80px 8% 40px; background: #050505; border-top: 1px solid var(-
 
 @media (max-width: 768px) {
     .endereco {
-      white-space: nowrap;
-      overflow-x: auto;
-      font-size: 14px;
-    }
+        white-space: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+      }
+      
+      .endereco::-webkit-scrollbar {
+        display: none; /* Chrome */
+      }
   }
 
 /* WHATSAPP */
