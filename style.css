@@ -51,11 +51,15 @@ nav.sticky {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: bold;
+    color: #d4af37;
     text-decoration: none;
-    color: var(--white);
-}
+  
+    /* RESPONSIVO AUTOMÁTICO */
+    font-size: clamp(14px, 4vw, 22px);
+  }
 
 .logo span { color: var(--gold); }
 
