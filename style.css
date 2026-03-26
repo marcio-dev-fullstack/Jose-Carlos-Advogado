@@ -1,5 +1,5 @@
 /* =========================
-   RESET BÁSICO
+   RESET
 ========================= */
 * {
     margin: 0;
@@ -8,7 +8,7 @@
   }
   
   /* =========================
-     BODY (FUNDO PADRÃO)
+     BODY
   ========================= */
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -31,38 +31,29 @@
   }
   
   /* =========================
+     FOTO (FORÇADO)
+  ========================= */
+  .foto-perfil {
+    display: block !important;
+    margin: 40px auto !important;
+    max-width: 250px !important;
+    border-radius: 10px !important;
+  
+    border: 3px solid #d4af37 !important;
+    padding: 6px !important;
+    background: linear-gradient(145deg, #000, #1a1a1a) !important;
+  
+    box-shadow:
+      0 0 10px rgba(212,175,55,0.3) !important,
+      0 0 20px rgba(212,175,55,0.2) !important;
+  }
+  
+  /* =========================
      TÍTULO
   ========================= */
   h1 {
-    margin-top: 20px;
-    font-size: 28px;
-    letter-spacing: 1px;
-  }
-  
-  /* =========================
-     SUBTEXTO
-  ========================= */
-  p {
     margin-top: 10px;
-    color: #ccc;
-  }
-  
-  /* =========================
-     FOTO (VERSÃO TOP)
-  ========================= */
-  .foto-perfil {
-    display: block;
-    margin: 30px auto;
-    max-width: 250px;
-    border-radius: 10px;
-  
-    border: 2px solid #d4af37;
-    padding: 6px;
-    background: linear-gradient(145deg, #000, #1a1a1a);
-  
-    box-shadow:
-      0 0 10px rgba(212,175,55,0.3),
-      0 0 20px rgba(212,175,55,0.2);
+    font-size: 28px;
   }
   
   /* =========================
@@ -73,47 +64,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 20px;
-    font-size: 16px;
-  }
-  
-  /* =========================
-     BOTÃO (PADRÃO PREMIUM)
-  ========================= */
-  .botao {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: 1px solid #d4af37;
-    color: #d4af37;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: 0.3s;
-  }
-  
-  .botao:hover {
-    background-color: #d4af37;
-    color: #000;
-  }
-  
-  /* =========================
-     HEADER (caso tenha menu)
-  ========================= */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: 0.3s;
-  }
-  
-  nav a:hover {
-    color: #d4af37;
+    font-size: 15px;
+    color: #aaa;
   }
   
   /* =========================
@@ -123,13 +75,10 @@
   
     .endereco {
       white-space: normal;
-      overflow: visible;
-      text-overflow: unset;
-      font-size: 14px;
     }
   
     .foto-perfil {
-      max-width: 90%;
+      max-width: 90% !important;
     }
   
     .logo {
